@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>batas perulangan function</title>
+</head>
+<body>
+    <script>
+function deretAngka(awal, akhir){
+    for(var y = awal; y <akhir; y++){
+        for(var x = awal; x <akhir; x++){
+            if(x == y || x == 9 -(y-1) || x == 2 || x == 8 || y == 2 || y == 8){
+                var hasil = y * 1 - 1
+                var hasil2 = hasil * 2
+                document.write("*")
+            }else{
+                document.write("_")
+            }
+        }
+        document.write("<br/>")
+    }
+
+}
+deretAngka(1, 10)
+    </script>
+</body>
+</html>
