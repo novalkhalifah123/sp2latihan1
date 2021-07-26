@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>switch function</title>
+</head>
+<body>
+    <script>
+function datanilai (nilai){
+        
+        var grade = "";
+        switch(true){
+        case nilai >= 90 : 
+        grade = "A";
+        break;
+        case nilai >= 80 :
+        grade = "B+"
+        break;
+        case nilai >= 70 :
+        grade = "B"
+        break;
+        default :
+        grade = "F";
+        }
+        document.write(`<p>Grade Anda : ${grade}</p>`);
+    }
+    var nilai = prompt("input nilai");
+    datanilai(nilai)
+    </script>
+</body>
+</html>
